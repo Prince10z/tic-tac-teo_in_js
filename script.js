@@ -129,3 +129,13 @@ const checkwinner = () => {
 
 
 };
+
+//Preventing from right click 
+window.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+
+//Preventing from f12 key pressing
+window.addEventListener("keydown", (e) => {
+    if (e.code === 'f12') {
+        e.preventDefault();
+    }
+});
